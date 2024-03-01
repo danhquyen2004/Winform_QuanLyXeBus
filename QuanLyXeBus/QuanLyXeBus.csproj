@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,18 @@
     <Compile Include="fMainManager.Designer.cs">
       <DependentUpon>fMainManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thêm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thêm.Designer.cs">
+      <DependentUpon>Thêm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlyxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlyxe.Designer.cs">
+      <DependentUpon>Quanlyxe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fLogin.resx">
@@ -75,6 +88,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quanlyxe.resx">
+      <DependentUpon>Quanlyxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thêm.resx">
+      <DependentUpon>Thêm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
