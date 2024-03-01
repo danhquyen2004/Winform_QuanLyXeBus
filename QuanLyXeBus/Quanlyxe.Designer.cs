@@ -135,7 +135,7 @@ namespace QuanLyXeBus
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(336, 59);
@@ -147,7 +147,7 @@ namespace QuanLyXeBus
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 21);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 22);
+            this.textBox1.Size = new System.Drawing.Size(302, 25);
             this.textBox1.TabIndex = 0;
             // 
             // Quanlyxe

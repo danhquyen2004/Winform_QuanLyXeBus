@@ -59,11 +59,23 @@
     <Compile Include="fMainManager.Designer.cs">
       <DependentUpon>fMainManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Thêm.cs">
+    <Compile Include="Thêm qlytaixe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Thêm.Designer.cs">
-      <DependentUpon>Thêm.cs</DependentUpon>
+    <Compile Include="Thêm qlytaixe.Designer.cs">
+      <DependentUpon>Thêm qlytaixe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlytaixe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlytaixe.Designer.cs">
+      <DependentUpon>Quanlytaixe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thêm qlyxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thêm qlyxe.Designer.cs">
+      <DependentUpon>Thêm qlyxe.cs</DependentUpon>
     </Compile>
     <Compile Include="Quanlyxe.cs">
       <SubType>Form</SubType>
@@ -88,11 +100,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quanlytaixe.resx">
+      <DependentUpon>Quanlytaixe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Quanlyxe.resx">
       <DependentUpon>Quanlyxe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Thêm.resx">
-      <DependentUpon>Thêm.cs</DependentUpon>
+    <EmbeddedResource Include="Thêm qlytaixe.resx">
+      <DependentUpon>Thêm qlytaixe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thêm qlyxe.resx">
+      <DependentUpon>Thêm qlyxe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
