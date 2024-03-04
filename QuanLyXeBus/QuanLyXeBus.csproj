@@ -72,6 +72,18 @@
     <Compile Include="QuanLyTuyenXe.Designer.cs">
       <DependentUpon>QuanLyTuyenXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemQLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemQLDV.Designer.cs">
+      <DependentUpon>ThemQLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemQLTX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemQLTX.Designer.cs">
+      <DependentUpon>ThemQLTX.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyTuyenXe.resx">
       <DependentUpon>QuanLyTuyenXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemQLDV.resx">
+      <DependentUpon>ThemQLDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemQLTX.resx">
+      <DependentUpon>ThemQLTX.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
