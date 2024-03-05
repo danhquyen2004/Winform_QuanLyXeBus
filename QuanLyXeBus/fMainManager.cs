@@ -17,9 +17,54 @@ namespace QuanLyXeBus
             InitializeComponent();
         }
 
+        private Form currentFormChild;
+
+        private void OpenForm(Form childForm)
+        {
+            if (currentFormChild != null) { currentFormChild.Close(); }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelbody.Controls.Add(childForm);
+            panelbody.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void fMainManager_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenForm(new QLNhanVien());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenForm(new QuanLyDonVi());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Quanlytaixe());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenForm(new QuanLyTuyenXe());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Quanlyxe());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenForm(new vexe());
         }
     }
 }
