@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyXeBus
 {
-    public partial class Form1 : Form
+    public partial class vexe : Form
     {
-        public Form1()
+        public vexe()
         {
             InitializeComponent();
         }
