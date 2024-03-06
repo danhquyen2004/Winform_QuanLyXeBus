@@ -104,7 +104,7 @@
     <Compile Include="vexe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
+    <Compile Include="vexe.Designer.cs">
       <DependentUpon>vexe.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
