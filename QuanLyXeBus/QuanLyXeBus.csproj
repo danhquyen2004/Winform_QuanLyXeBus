@@ -101,6 +101,9 @@
     <Compile Include="Themve.Designer.cs">
       <DependentUpon>Themve.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="vexe.cs">
       <SubType>Form</SubType>
     </Compile>
