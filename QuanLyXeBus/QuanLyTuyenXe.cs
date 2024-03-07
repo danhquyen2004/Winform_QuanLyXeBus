@@ -31,5 +31,17 @@ namespace QuanLyXeBus
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ThemQLTX them = new ThemQLTX();
+            them.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ThemQLTX them = new ThemQLTX();
+            them.ShowDialog();
+        }
     }
 }
