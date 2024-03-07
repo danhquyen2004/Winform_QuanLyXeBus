@@ -54,12 +54,15 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Themve themve = new Themve();
+            themve.ShowDialog();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Themve suave = new Themve();
+            suave.ShowDialog();
         }
     }
 }

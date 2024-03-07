@@ -38,19 +38,22 @@
             this.textPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.eC_Form = new QuanLyXeBus.UI.ElipseControl();
             this.eC_UserName = new QuanLyXeBus.UI.ElipseControl();
             this.eC_Password = new QuanLyXeBus.UI.ElipseControl();
             this.eCbtnLogin = new QuanLyXeBus.UI.ElipseControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -87,10 +90,10 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Arial Black", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(174, 16);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(181, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(190, 90);
+            this.label4.Size = new System.Drawing.Size(251, 71);
             this.label4.TabIndex = 6;
             this.label4.Text = "Log in";
             // 
@@ -161,6 +164,20 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(251)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(209)))), ((int)(((byte)(216)))));
+            this.textBox1.Location = new System.Drawing.Point(80, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(318, 26);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.TabStop = false;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,24 +200,12 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(175)))), ((int)(((byte)(94)))));
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(354, 626);
             this.panel4.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(251)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(209)))), ((int)(((byte)(216)))));
-            this.textBox1.Location = new System.Drawing.Point(80, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 26);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TabStop = false;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // eC_Form
             // 
@@ -221,6 +226,26 @@
             // 
             this.eCbtnLogin.CornerRadius = 60;
             this.eCbtnLogin.TargetControl = this.btnLogin;
+            // 
+            // label6
+            // 
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(12, 273);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(326, 190);
+            this.label6.TabIndex = 0;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(21, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(565, 61);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "BUS MANAGEMENT";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // fLogin
             // 
@@ -243,6 +268,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,6 +291,8 @@
         private System.Windows.Forms.Label label4;
         private UI.ElipseControl eCbtnLogin;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

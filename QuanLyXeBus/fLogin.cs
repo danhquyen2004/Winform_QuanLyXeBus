@@ -64,7 +64,11 @@ namespace QuanLyXeBus
         private void textBox1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "User name")
+            {
                 textBox1.Text = "";
+                textBox1.ForeColor = System.Drawing.Color.Black;
+            }
+                
         }
 
         private void textPassword_TextChanged(object sender, EventArgs e)
@@ -73,27 +77,38 @@ namespace QuanLyXeBus
 
         private void textPassword_Click(object sender, EventArgs e)
         {
-            if(textPassword.Text == "Password")
+            textPassword.UseSystemPasswordChar = true;
+            if (textPassword.Text == "Password")
             {
                 textPassword.Text = "";
-                textPassword.UseSystemPasswordChar = true;
+                textPassword.ForeColor = System.Drawing.Color.Black;
             }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
             if(textBox1.Text == "")
+            {
                 textBox1.Text = "User name";
+                textBox1.ForeColor = System.Drawing.Color.FromArgb(206, 209, 216);
+            }    
+                
         }
 
         private void textPassword_Leave(object sender, EventArgs e)
         {
             if (textPassword.Text == "")
             {
+                textPassword.ForeColor = System.Drawing.Color.FromArgb(206, 209, 216);
                 textPassword.Text = "Password";
                 textPassword.UseSystemPasswordChar = false;
             }
                 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
