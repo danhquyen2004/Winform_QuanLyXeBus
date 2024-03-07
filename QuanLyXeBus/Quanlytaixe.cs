@@ -21,5 +21,17 @@ namespace QuanLyXeBus
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Quanlytaixe them = new Quanlytaixe();
+            them.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Quanlytaixe them = new Quanlytaixe();
+            them.ShowDialog();
+        }
     }
 }
