@@ -32,11 +32,6 @@ namespace QuanLyXeBus
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaDonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -66,53 +61,12 @@ namespace QuanLyXeBus
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaDonVi,
-            this.TenDonVi,
-            this.Column3,
-            this.Column4,
-            this.Column5});
             this.dataGridView1.Location = new System.Drawing.Point(34, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(740, 241);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // MaDonVi
-            // 
-            this.MaDonVi.HeaderText = "MaDonVi";
-            this.MaDonVi.MinimumWidth = 6;
-            this.MaDonVi.Name = "MaDonVi";
-            this.MaDonVi.Width = 125;
-            // 
-            // TenDonVi
-            // 
-            this.TenDonVi.HeaderText = "TenDonVi";
-            this.TenDonVi.MinimumWidth = 6;
-            this.TenDonVi.Name = "TenDonVi";
-            this.TenDonVi.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "DiaChi";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "SoDienThoai";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Email";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
             // 
             // button1
             // 
@@ -184,10 +138,5 @@ namespace QuanLyXeBus
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDonVi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDonVi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
