@@ -58,7 +58,7 @@ namespace QuanLyXeBus
 
         private void label5_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -109,6 +109,11 @@ namespace QuanLyXeBus
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
