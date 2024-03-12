@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -6,11 +8,14 @@ namespace QuanLyXeBus
 {
     public partial class fLogin : Form
     {
+        List<User> users = new List<User> ();
         public fLogin()
         {
             InitializeComponent();
+            users = GetUserFromDB();
             textBox1.Text = "User name";
             textPassword.Text = "Password";
+            label8.Text = "";
             textPassword.UseSystemPasswordChar = false;
         }
 
@@ -21,10 +26,25 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fMainManager f = new fMainManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string username = textBox1.Text;
+            string password = textPassword.Text;
+
+            foreach (var user in users)
+            {
+                if (user.userName == username)
+                {
+                    if (user.password == password)
+                    {
+                        label8.Text = "";
+                        fMainManager f = new fMainManager();
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+                        return;
+                    }
+                }
+                label8.Text = "User name or password is incorrect";
+            }
         }
 
 
@@ -35,7 +55,7 @@ namespace QuanLyXeBus
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(MessageBox.Show("Bạn chắc chắn thoát?","Thông Báo",MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn chắc chắn thoát?", "Thông Báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
             {
                 e.Cancel = true;
             }
@@ -58,7 +78,7 @@ namespace QuanLyXeBus
 
         private void label5_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_Click(object sender, EventArgs e)
@@ -68,7 +88,7 @@ namespace QuanLyXeBus
                 textBox1.Text = "";
                 textBox1.ForeColor = System.Drawing.Color.Black;
             }
-                
+
         }
 
         private void textPassword_TextChanged(object sender, EventArgs e)
@@ -87,12 +107,12 @@ namespace QuanLyXeBus
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if(textBox1.Text == "")
+            if (textBox1.Text == "")
             {
                 textBox1.Text = "User name";
                 textBox1.ForeColor = System.Drawing.Color.FromArgb(206, 209, 216);
-            }    
-                
+            }
+
         }
 
         private void textPassword_Leave(object sender, EventArgs e)
@@ -103,7 +123,7 @@ namespace QuanLyXeBus
                 textPassword.Text = "Password";
                 textPassword.UseSystemPasswordChar = false;
             }
-                
+
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -115,5 +135,26 @@ namespace QuanLyXeBus
         {
             System.Windows.Forms.Application.Exit();
         }
+        private List<User> GetUserFromDB()
+        {
+            List<User> users = new List<User>();
+            string connectionStr = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True";
+            string query = "Select TenTK,MatKhau,ChucVu from NhanVien";
+            SqlConnection connection = new SqlConnection(connectionStr);
+            connection.Open();
+            SqlCommand sqlCommand = new SqlCommand(query, connection);
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                User user = new User();
+                user.userName = reader["TenTK"].ToString();
+                user.password = reader["MatKhau"].ToString();
+                user.role = Convert.ToInt32(reader["ChucVu"]);
+                users.Add(user);
+            }
+            connection.Close();
+            return users;
+        }
+
     }
 }

@@ -19,7 +19,7 @@ public class DataProvider
     {
         this.connectionStr = connectionStr;
     }
-    public DataTable ExecuteQuery(string query)
+    public DataTable DataTableByQuery(string query)
     {
         DataTable data = new DataTable();
         SqlConnection connection = new SqlConnection(connectionStr);

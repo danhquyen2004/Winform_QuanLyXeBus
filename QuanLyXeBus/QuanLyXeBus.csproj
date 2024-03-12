@@ -66,6 +66,7 @@
     <Compile Include="QLNhanVien.Designer.cs">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Script\User.cs" />
     <Compile Include="ThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label3.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

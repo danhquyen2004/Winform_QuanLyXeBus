@@ -31,9 +31,9 @@ namespace QuanLyXeBus
         private void LoadNhanVien()
         {
             string query = "select * from NhanVien";
-            string connectionString = "Data Source=.;Initial Catalog=QuanLyXeBus;Integrated Security=True";
+            string connectionString = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True";
             DataProvider.Instance.SetConnectionString(connectionString);
-            dataGridView1.DataSource =  DataProvider.Instance.ExecuteQuery(query);
+            dataGridView1.DataSource =  DataProvider.Instance.DataTableByQuery(query);
         }
     }
 }
