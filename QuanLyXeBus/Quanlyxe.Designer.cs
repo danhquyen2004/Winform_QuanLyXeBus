@@ -30,12 +30,6 @@ namespace QuanLyXeBus
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Maxe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bienso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soghe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaysx = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chukibh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Matuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,48 +43,10 @@ namespace QuanLyXeBus
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Maxe,
-            this.Bienso,
-            this.Soghe,
-            this.Ngaysx,
-            this.chukibh,
-            this.Matuyen});
             this.dataGridView1.Location = new System.Drawing.Point(-1, 129);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 222);
+            this.dataGridView1.Size = new System.Drawing.Size(712, 222);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Maxe
-            // 
-            this.Maxe.HeaderText = "Mã xe";
-            this.Maxe.Name = "Maxe";
-            // 
-            // Bienso
-            // 
-            this.Bienso.HeaderText = "Biển số";
-            this.Bienso.Name = "Bienso";
-            // 
-            // Soghe
-            // 
-            this.Soghe.HeaderText = "Số ghế";
-            this.Soghe.Name = "Soghe";
-            // 
-            // Ngaysx
-            // 
-            this.Ngaysx.HeaderText = "Ngày sản xuất";
-            this.Ngaysx.Name = "Ngaysx";
-            // 
-            // chukibh
-            // 
-            this.chukibh.HeaderText = "Chu kì bảo hành";
-            this.chukibh.MaxInputLength = 40000;
-            this.chukibh.Name = "chukibh";
-            // 
-            // Matuyen
-            // 
-            this.Matuyen.HeaderText = "Mã tuyến";
-            this.Matuyen.Name = "Matuyen";
             // 
             // button1
             // 
@@ -106,7 +62,7 @@ namespace QuanLyXeBus
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(200, 385);
+            this.button2.Location = new System.Drawing.Point(227, 385);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 31);
             this.button2.TabIndex = 4;
@@ -117,7 +73,7 @@ namespace QuanLyXeBus
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(373, 385);
+            this.button3.Location = new System.Drawing.Point(418, 385);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 31);
             this.button3.TabIndex = 5;
@@ -127,7 +83,7 @@ namespace QuanLyXeBus
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(554, 385);
+            this.button4.Location = new System.Drawing.Point(614, 385);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 31);
             this.button4.TabIndex = 6;
@@ -176,12 +132,6 @@ namespace QuanLyXeBus
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Maxe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Bienso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soghe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaysx;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chukibh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Matuyen;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
