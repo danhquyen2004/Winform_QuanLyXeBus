@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="label5.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -630,7 +627,7 @@
   <data name="label6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAACZCAYAAAAGjCfJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA64hJREFUeF7s/Qd8HOeWHYjvrr3r39re9d9/e8bjl2ZeVHrKWWImQSLnnHNmAHPO
+        vAAADrwBlbxySQAA64hJREFUeF7s/Qd8HOeWHYjvrr3r39re9d9/e8bjl2ZeVHrKWWImQSLnnHNmAHPO
         OSMwgpkSk0gxiBRzJpFzJEEQIEjknIFGN/rsuV93gZBGejNvLGnes/lJl1Vd3eiu+uqee879Uv1vL8qL
         8qK8KC/Ki/KivCgvyovyorwoL8qL8qK8KC/Ki/KivCgvyovyorwoL8qL8qK8KH8hJSsr698XFRX9X2Lm
         Qy/Ki/Ki/KWXmzdv/ttjn3326eYNawMig4I2WVuMO2YxZuQpi3Gjz4wZ/fG5N99+7eprf3zp9q9+/bOi

@@ -39,6 +39,7 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.BackColor = Color.White;
             OpenForm(new QLNhanVien());
         }
 
@@ -49,22 +50,45 @@ namespace QuanLyXeBus
 
         private void button3_Click(object sender, EventArgs e)
         {
+            button3.BackColor = Color.White;
             OpenForm(new Quanlytaixe());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            button4.BackColor = Color.White;
             OpenForm(new QuanLyTuyenXe());
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            button5.BackColor = Color.White;
             OpenForm(new Quanlyxe());
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             OpenForm(new vexe());
+        }
+
+        private void button1_Leave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Bisque;
+        }
+
+        private void button3_Leave(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.Bisque;
+        }
+
+        private void button4_Leave(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Bisque;
+        }
+
+        private void button5_Leave(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Bisque;
         }
     }
 }
