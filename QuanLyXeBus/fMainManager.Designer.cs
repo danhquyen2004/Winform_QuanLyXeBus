@@ -30,11 +30,9 @@
         {
             this.dataSet1 = new System.Data.DataSet();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panelbody = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
@@ -45,82 +43,74 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(21, 229);
+            this.button1.BackColor = System.Drawing.Color.Bisque;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 145);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 56);
+            this.button1.Size = new System.Drawing.Size(146, 125);
             this.button1.TabIndex = 0;
             this.button1.Text = "QL Nhân viên";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(21, 291);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 56);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "QL Đơn vị";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button1.Leave += new System.EventHandler(this.button1_Leave);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(21, 353);
+            this.button3.BackColor = System.Drawing.Color.Bisque;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(0, 266);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 56);
+            this.button3.Size = new System.Drawing.Size(146, 125);
             this.button3.TabIndex = 2;
             this.button3.Text = "QL Tài xế";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Leave += new System.EventHandler(this.button3_Leave);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(21, 415);
+            this.button4.BackColor = System.Drawing.Color.Bisque;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(0, 388);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 56);
+            this.button4.Size = new System.Drawing.Size(146, 125);
             this.button4.TabIndex = 3;
             this.button4.Text = "QL Tuyến xe";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Leave += new System.EventHandler(this.button4_Leave);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(21, 477);
+            this.button5.BackColor = System.Drawing.Color.Bisque;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(0, 510);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(146, 56);
+            this.button5.Size = new System.Drawing.Size(146, 125);
             this.button5.TabIndex = 4;
             this.button5.Text = "QL xe";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(21, 539);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(146, 56);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "QL vé";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button5.Leave += new System.EventHandler(this.button5_Leave);
             // 
             // panelbody
             // 
-            this.panelbody.Location = new System.Drawing.Point(188, 12);
+            this.panelbody.BackColor = System.Drawing.Color.White;
+            this.panelbody.Location = new System.Drawing.Point(142, -2);
             this.panelbody.Name = "panelbody";
-            this.panelbody.Size = new System.Drawing.Size(795, 621);
+            this.panelbody.Size = new System.Drawing.Size(841, 637);
             this.panelbody.TabIndex = 7;
             // 
             // fMainManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(995, 645);
             this.Controls.Add(this.panelbody);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "fMainManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -135,11 +125,9 @@
 
         private System.Data.DataSet dataSet1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panelbody;
     }
 }
