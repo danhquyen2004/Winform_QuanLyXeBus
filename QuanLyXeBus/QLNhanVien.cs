@@ -32,7 +32,7 @@ namespace QuanLyXeBus
         {
             string query = "select TenTK as [Tài Khoản], MaTK as [Mã số], MatKhau as [Mật Khẩu],HoTen as [Họ Tên], " +
                 "LienLac as [Liên Lạc],ChucVu as [Chức Vụ],NgaySinh as [Ngày Sinh] from NhanVien";
-            string connectionString = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-M1G05FS\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
             DataProvider.Instance.SetConnectionString(connectionString);
             dataGridView1.DataSource =  DataProvider.Instance.DataTableByQuery(query);
         }
