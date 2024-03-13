@@ -20,7 +20,7 @@ namespace QuanLyXeBus
         }
         public void Hienthi()
         {
-            string chuoi = "Data Source=DESKTOP-LNGJ4BJ\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
+            string chuoi = "Data Source=DESKTOP-LNGJ4BJ\\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
             SqlConnection connection = new SqlConnection(chuoi);
             connection.Open();
             string lenh = "select * from Xe";
@@ -30,7 +30,9 @@ namespace QuanLyXeBus
             sqlDataAdapter.Fill(dataTable);
             dataGridView1.DataSource = dataTable;
             connection.Close();
+            
         }
+
         
 
         private void Quanlyxe_Load(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Quanlyxe them = new Quanlyxe();
+            Thêm them = new Thêm();
             them.ShowDialog();
 
 
@@ -48,8 +50,13 @@ namespace QuanLyXeBus
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Quanlyxe them = new Quanlyxe();
+            Thêm them = new Thêm();
             them.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hienthi();
         }
     }
 }

@@ -45,7 +45,7 @@ namespace QuanLyXeBus
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 129);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(712, 222);
+            this.dataGridView1.Size = new System.Drawing.Size(609, 222);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -62,7 +62,7 @@ namespace QuanLyXeBus
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(227, 385);
+            this.button2.Location = new System.Drawing.Point(144, 385);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 31);
             this.button2.TabIndex = 4;
@@ -73,7 +73,7 @@ namespace QuanLyXeBus
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(418, 385);
+            this.button3.Location = new System.Drawing.Point(283, 385);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 31);
             this.button3.TabIndex = 5;
@@ -83,12 +83,13 @@ namespace QuanLyXeBus
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(614, 385);
+            this.button4.Location = new System.Drawing.Point(443, 385);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 31);
             this.button4.TabIndex = 6;
             this.button4.Text = "Làm Mới";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox1
             // 
@@ -112,7 +113,7 @@ namespace QuanLyXeBus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(625, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
