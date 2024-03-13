@@ -52,6 +52,8 @@ namespace QuanLyXeBus
             command.CommandText = query;
             int check = command.ExecuteNonQuery();
             connection.Close();
+
+
             if (check > 0)
                 MessageBox.Show("Thêm nhân viên thành công!");
             else
