@@ -240,7 +240,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(21, 195);
+            this.label7.Location = new System.Drawing.Point(21, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(565, 61);
             this.label7.TabIndex = 7;
