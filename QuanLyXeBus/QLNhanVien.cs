@@ -66,5 +66,20 @@ namespace QuanLyXeBus
         {
             LoadNhanVien();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridView1.SelectedCells[0].RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[selectedIndex];
+
+
+            ThemNhanVien form = new ThemNhanVien(row);
+            form.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

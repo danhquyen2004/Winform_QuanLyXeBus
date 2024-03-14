@@ -35,6 +35,7 @@ namespace QuanLyXeBus
             InitializeComponent();
         }
 
+
         private void button4_Click(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
@@ -48,11 +49,6 @@ namespace QuanLyXeBus
             form1.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.ShowDialog();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -91,6 +87,20 @@ namespace QuanLyXeBus
             {
                 MessageBox.Show("Xóa thất bại");
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            int selectedIndex = dataGridView1.SelectedCells[0].RowIndex;
+            DataGridViewRow dataGridViewRow = dataGridView1.Rows[selectedIndex];
+            Form1 form1 = new Form1(dataGridViewRow);
+            form1.ShowDialog();
         }
     }
 }

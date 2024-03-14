@@ -39,56 +39,61 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.BackColor = Color.White;
-            OpenForm(new QLNhanVien());
+            if(UserRole.Instance.role == 0)
+            {
+                label2.Text = button1.Text;
+                OpenForm(new QLNhanVien());
+            }    
+            else
+            {
+                MessageBox.Show("Bạn không phải là Admin");
+            }    
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenForm(new QuanLyDonVi());
+            //OpenForm(new QuanLyDonVi());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            button3.BackColor = Color.White;
+            label2.Text = button3.Text;
             OpenForm(new Quanlytaixe());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
+            label2.Text = button4.Text;
             OpenForm(new QuanLyTuyenXe());
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            button5.BackColor = Color.White;
+            label2.Text = button5.Text;
             OpenForm(new Quanlyxe());
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            OpenForm(new vexe());
+            //OpenForm(new vexe());
         }
 
         private void button1_Leave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.Bisque;
         }
 
         private void button3_Leave(object sender, EventArgs e)
         {
-            button3.BackColor = Color.Bisque;
         }
 
         private void button4_Leave(object sender, EventArgs e)
         {
-            button4.BackColor = Color.Bisque;
+
         }
 
         private void button5_Leave(object sender, EventArgs e)
         {
-            button5.BackColor = Color.Bisque;
+
         }
     }
 }

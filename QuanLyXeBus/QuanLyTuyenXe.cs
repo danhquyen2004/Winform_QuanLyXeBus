@@ -21,7 +21,7 @@ namespace QuanLyXeBus
         }
         public void HienThi()
         {
-            string str = @"Data Source=DESKTOP-M1G05FS\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
+            string str = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
             SqlConnection connection = new SqlConnection(str);
             connection.Open();
             string lenh = "select * from Tuyen";
@@ -31,20 +31,6 @@ namespace QuanLyXeBus
             dataAdapter.Fill(table);
             dataGridView1.DataSource = table;
             connection.Close();
-            
-        }
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -56,12 +42,11 @@ namespace QuanLyXeBus
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ThemQLTX them = new ThemQLTX();
-            them.ShowDialog();
-        }
+            int selectedIndex = dataGridView1.SelectedCells[0].RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[selectedIndex];
 
-        private void QuanLyTuyenXe_Load(object sender, EventArgs e)
-        {
+            ThemQLTX them = new ThemQLTX(row);
+            them.ShowDialog();
 
         }
 
@@ -75,7 +60,7 @@ namespace QuanLyXeBus
             int selectedIndex = dataGridView1.SelectedCells[0].RowIndex;
             string masoxoa = Convert.ToString(dataGridView1.Rows[selectedIndex].Cells[0].Value);
             string query = "Delete from Tuyen where MaTuyen = " + masoxoa;
-            string connectionString = @"Data Source=DESKTOP-M1G05FS\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
+            string connectionString = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             SqlCommand command = new SqlCommand(query, connection);

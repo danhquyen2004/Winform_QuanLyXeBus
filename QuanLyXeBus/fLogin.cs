@@ -35,11 +35,13 @@ namespace QuanLyXeBus
                 {
                     if (user.password == password)
                     {
+                        UserRole.Instance.role = user.role;
                         label8.Text = "";
                         fMainManager f = new fMainManager();
                         this.Hide();
                         f.ShowDialog();
                         this.Show();
+                        users = GetUserFromDB();
                         return;
                     }
                 }
