@@ -65,7 +65,7 @@ namespace QuanLyXeBus
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(114, 155);
+            this.label3.Location = new System.Drawing.Point(114, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 3;
@@ -126,7 +126,7 @@ namespace QuanLyXeBus
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(309, 154);
+            this.textBox2.Location = new System.Drawing.Point(309, 150);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(60, 25);
             this.textBox2.TabIndex = 11;
