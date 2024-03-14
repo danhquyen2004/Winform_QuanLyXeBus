@@ -71,6 +71,7 @@ namespace QuanLyXeBus
             this.button3.TabIndex = 2;
             this.button3.Text = "Hủy";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
@@ -160,6 +161,7 @@ namespace QuanLyXeBus
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "ThemQLDV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemQLDV";
             this.ResumeLayout(false);
             this.PerformLayout();
