@@ -43,7 +43,7 @@ namespace QuanLyXeBus
             matkhau = textBox4.Text;
             lienlac = textBox1.Text;
             chucvu = comboBox1.Text == "Admin" ? 0 : 1;
-            string connectionStr = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True";
+            string connectionStr = "Data Source=LAPTOP-N9ELN8MN\\SQLEXPRESS01;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
             string query = "insert into NhanVien values (N'"+tentk+"',N'"+matkhau+"',N'"+hoten+"', N'"+lienlac+"',"+chucvu+",'"+ngaysinh+"')";
 
             SqlConnection connection = new SqlConnection(connectionStr);
