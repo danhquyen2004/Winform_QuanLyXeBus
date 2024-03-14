@@ -138,7 +138,7 @@ namespace QuanLyXeBus
         private List<User> GetUserFromDB()
         {
             List<User> users = new List<User>();
-            string connectionStr = "Data Source=LAPTOP-N9ELN8MN\\SQLEXPRESS01;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
+            string connectionStr = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
             string query = "Select TenTK,MatKhau,ChucVu from NhanVien";
             SqlConnection connection = new SqlConnection(connectionStr);
             connection.Open();
