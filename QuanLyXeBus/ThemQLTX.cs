@@ -27,7 +27,7 @@ namespace QuanLyXeBus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //luu
+            //them
             ten = textBox1.Text;
             luotdi = textBox9.Text;
             luotve = textBox10.Text;
@@ -54,6 +54,11 @@ namespace QuanLyXeBus
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThemQLTX_Load(object sender, EventArgs e)
         {
 
         }

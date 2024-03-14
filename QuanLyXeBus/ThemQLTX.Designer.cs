@@ -183,6 +183,7 @@ namespace QuanLyXeBus
             this.Name = "ThemQLTX";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemQLTX";
+            this.Load += new System.EventHandler(this.ThemQLTX_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -69,5 +69,32 @@ namespace QuanLyXeBus
         {
             HienThi();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridView1.SelectedCells[0].RowIndex;
+            string masoxoa = Convert.ToString(dataGridView1.Rows[selectedIndex].Cells[0].Value);
+            string query = "Delete from Tuyen where MaTuyen = " + masoxoa;
+            string connectionString = @"Data Source=DESKTOP-M1G05FS\SQLEXPRESS;Initial Catalog=BusManager;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            command.CommandText = query;
+            int check = command.ExecuteNonQuery();
+            connection.Close();
+            if (check > 0)
+            {
+                MessageBox.Show("Xóa thành công");
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại");
+            }
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

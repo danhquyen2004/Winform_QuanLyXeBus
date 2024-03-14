@@ -56,6 +56,7 @@ namespace QuanLyXeBus
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(813, 330);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // groupBox1
             // 
@@ -71,7 +72,7 @@ namespace QuanLyXeBus
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(64, 516);
+            this.button1.Location = new System.Drawing.Point(64, 518);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 61);
             this.button1.TabIndex = 5;
@@ -91,19 +92,20 @@ namespace QuanLyXeBus
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(458, 523);
+            this.button3.Location = new System.Drawing.Point(460, 518);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 56);
+            this.button3.Size = new System.Drawing.Size(139, 61);
             this.button3.TabIndex = 7;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(648, 523);
+            this.button4.Location = new System.Drawing.Point(650, 518);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 56);
+            this.button4.Size = new System.Drawing.Size(139, 61);
             this.button4.TabIndex = 8;
             this.button4.Text = "Làm Mới";
             this.button4.UseVisualStyleBackColor = true;
