@@ -42,7 +42,7 @@ namespace QuanLyXeBus
             gioitinh = comboBox1.Text;
             quequan = textBox4.Text;
             xelai = Convert.ToInt32(comboBox2.Text);
-            string connectionString = "Data Source=.;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
+            string connectionString = "Data Source=LAPTOP-N9ELN8MN\\SQLEXPRESS01;Initial Catalog=BusManager;Integrated Security=True;Encrypt=False";
             string query = "insert into TaiXe values (N'" + hoten + "',N'" + ngaysinh + "',N'" + gioitinh + "',N'" + quequan + "'," + xelai + ")";
 
             SqlConnection connection = new SqlConnection(connectionString);
